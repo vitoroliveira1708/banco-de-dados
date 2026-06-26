@@ -15,3 +15,6 @@ CREATE TABLE Compras (
 );
 SELECT * FROM Clientes; 
 SELECT * FROM Compras; 
+SELECT c.nomeCliente, c.emailCliente, co.NomeLivro
+FROM Compras co
+JOIN Clientes c ON co.ClienteID = c.ID;
